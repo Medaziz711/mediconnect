@@ -1,0 +1,187 @@
+<div class="profile-container">
+  <!-- Loading State -->
+  @if (loading()) {
+  <div class="loading-state">
+    <div class="spinner"></div>
+    <p>Chargement du profil...</p>
+  </div>
+  }
+
+  <!-- Error State -->
+  @if (error()) {
+  <div class="error-state">
+    <span class="error-icon">⚠️</span>
+    <p>{{ error() }}</p>
+    <button (click)="loadProfile()">Réessayer</button>
+  </div>
+  }
+
+  <!-- Profile Content -->
+  @if (!loading() && !error() && pharmacist(); as p) {
+  <div class="profile-layout">
+    <!-- Header Section -->
+    <section class="profile-header">
+      <div class="header-bg"></div>
+      <div class="header-content">
+        <div class="photo-wrapper">
+          <img [src]="previewUrl() || profilePhotoUrl" (error)="onImageError($event)" alt="Photo de profil"
+            class="profile-img">
+          <button class="edit-photo-trigger" (click)="fileInput.click()">
+            <span>📷</span>
+          </button>
+          <input type="file" #fileInput hidden (change)="onPhotoSelected($event)" accept="image/*">
+
+          <!-- Upload confirmation -->
+          <div class="upload-actions" *ngIf="selectedFile()">
+            <button class="confirm" (click)="uploadPhoto()">Valider</button>
+            <button class="cancel" (click)="selectedFile.set(null); previewUrl.set(null)">Annuler</button>
+          </div>
+        </div>
+
+        <div class="user-meta">
+          <h1>{{ p.firstName }} {{ p.lastName }}</h1>
+          <div class="badges">
+            <span class="status-badge" [class]="p.status?.toLowerCase()">{{ p.status || 'En attente' }}</span>
+            <span class="role-badge">Pharmacien</span>
+          </div>
+          <p class="license">📜 Licence: {{ p.licenseNumber || 'N/A' }}</p>
+          <p class="since">📅 Membre depuis: {{ p.createdAt | date:'longDate' }}</p>
+        </div>
+
+        <div class="header-actions">
+          <button class="btn-edit" (click)="openEditModal()">Modifier le profil</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="profile-grid">
+      <!-- Personal Info -->
+      <section class="info-card">
+        <div class="card-header">
+          <h3>Informations Personnelles</h3>
+        </div>
+        <div class="card-body">
+          <div class="info-item">
+            <label>Nom complet</label>
+            <p>{{ p.firstName }} {{ p.lastName }}</p>
+          </div>
+          <div class="info-item">
+            <label>Email</label>
+            <p>{{ p.email }}</p>
+          </div>
+          <div class="info-item">
+            <label>Téléphone</label>
+            <p>{{ p.phone || 'Non spécifié' }}</p>
+          </div>
+          <div class="info-item">
+            <label>Adresse</label>
+            <p>{{ p.address || 'Non spécifiée' }}</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pharmacy Info -->
+      <section class="info-card">
+        <div class="card-header">
+          <h3>Informations Pharmacie</h3>
+        </div>
+        <div class="card-body">
+          <div class="info-item">
+            <label>Nom de la pharmacie</label>
+            <p>{{ p.pharmacy?.name || 'Non spécifié' }}</p>
+          </div>
+          <div class="info-item">
+            <label>Adresse pharmacie</label>
+            <p>{{ p.pharmacy?.address || 'Non spécifiée' }}</p>
+          </div>
+          <div class="info-item">
+            <label>Téléphone pharmacie</label>
+            <p>{{ p.pharmacy?.phone || 'Non spécifié' }}</p>
+          </div>
+          <div class="info-item">
+            <label>Horaires</label>
+            <p>{{ p.pharmacy?.hours || '8h - 22h' }}</p>
+          </div>
+          <div class="info-item">
+            <label>Ouverte 24/7</label>
+            <p class="badge-24" [class.open]="p.pharmacy?.open24Hours">
+              {{ p.pharmacy?.open24Hours ? 'OUI' : 'NON' }}
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  }
+</div>
+
+<!-- Simple Modal for Editing -->
+<div class="modal-backdrop" *ngIf="showEditModal()">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h2>Modifier le profil</h2>
+      <button class="close" (click)="closeEditModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-tabs">
+        <button type="button" [class.active]="activeEditTab() === 'personal'"
+          (click)="activeEditTab.set('personal')">Personnel</button>
+        <button type="button" [class.active]="activeEditTab() === 'pharmacy'"
+          (click)="activeEditTab.set('pharmacy')">Pharmacie</button>
+      </div>
+
+      <form [formGroup]="editForm" (ngSubmit)="saveProfile()">
+        @if (activeEditTab() === 'personal') {
+        <div class="form-row">
+          <div class="form-group">
+            <label>Prénom</label>
+            <input formControlName="firstName">
+          </div>
+          <div class="form-group">
+            <label>Nom</label>
+            <input formControlName="lastName">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Téléphone</label>
+          <input formControlName="phone">
+        </div>
+        <div class="form-group">
+          <label>Adresse</label>
+          <input formControlName="address">
+        </div>
+        } @else {
+        <h3>Pharmacie</h3>
+        <div class="form-group">
+          <label>Nom de la pharmacie</label>
+          <input formControlName="pharmacyName">
+        </div>
+        <div class="form-group">
+          <label>Horaires</label>
+          <input formControlName="hours">
+        </div>
+        <div class="form-group">
+          <label>Téléphone pharmacie</label>
+          <input formControlName="pharmacyPhone">
+        </div>
+        <div class="form-group">
+          <label>Adresse pharmacie</label>
+          <input formControlName="pharmacyAddress">
+        </div>
+        <div class="form-group checkbox-group">
+          <label class="checkbox-container">
+            Ouverte 24/7
+            <input type="checkbox" formControlName="open24Hours">
+          </label>
+        </div>
+        }
+
+        <div class="modal-footer">
+          <button type="button" class="btn-cancel" (click)="closeEditModal()">Annuler</button>
+          <button type="submit" class="btn-save" [disabled]="editForm.invalid || isSaving()">Enregistrer</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>

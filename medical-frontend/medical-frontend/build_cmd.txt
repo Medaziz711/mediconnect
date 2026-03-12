@@ -1,0 +1,63 @@
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m[2m | [22m[1mEstimated transfer size[22m
+[32mchunk-KSE7ZOA5.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m187.08 kB[39m[2m | [22m               [36m54.15 kB[39m
+[32mchunk-PE5DNF3F.js[39m  [2m | [22m[2m-[22m                             [2m | [22m [36m92.81 kB[39m[2m | [22m               [36m23.33 kB[39m
+[32mmain-IFYR7YRV.js[39m   [2m | [22m[2mmain[22m                          [2m | [22m [36m62.52 kB[39m[2m | [22m               [36m17.11 kB[39m
+[32mchunk-MLMGL4QO.js[39m  [2m | [22m[2m-[22m                             [2m | [22m  [36m3.91 kB[39m[2m | [22m                [36m1.03 kB[39m
+[32mstyles-5INURTSO.css[39m[2m | [22m[2mstyles[22m                        [2m | [22m  [36m0 bytes[39m[2m | [22m                [36m0 bytes[39m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m                 [2m | [22m[1m346.32 kB[22m[2m | [22m               [1m95.61 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m[2m | [22m[1mEstimated transfer size[22m
+[32mchunk-ZK2VQRIX.js[39m  [2m | [22m[2m-[22m                             [2m | [22m [36m45.98 kB[39m[2m | [22m                [36m9.30 kB[39m
+[32mchunk-CNURNJF7.js[39m  [2m | [22m[2mauth-component[22m                [2m | [22m [36m44.09 kB[39m[2m | [22m               [36m11.17 kB[39m
+[32mchunk-XJBO6F3S.js[39m  [2m | [22m[2mdoctor-dashboard-component[22m    [2m | [22m [36m39.65 kB[39m[2m | [22m                [36m9.51 kB[39m
+[32mchunk-TOW4W4WP.js[39m  [2m | [22m[2mpatient-dashboard-component[22m   [2m | [22m [36m38.67 kB[39m[2m | [22m                [36m9.06 kB[39m
+[32mchunk-DOAB3WSK.js[39m  [2m | [22m[2mpharmacist-profile-component[22m  [2m | [22m [36m16.19 kB[39m[2m | [22m                [36m4.29 kB[39m
+[32mchunk-OF42LUXV.js[39m  [2m | [22m[2mstock-list-component[22m          [2m | [22m [36m15.50 kB[39m[2m | [22m                [36m4.24 kB[39m
+[32mchunk-HM7EOIZY.js[39m  [2m | [22m[2mdashboard-component[22m           [2m | [22m [36m13.63 kB[39m[2m | [22m                [36m3.94 kB[39m
+[32mchunk-M6SQCVXL.js[39m  [2m | [22m[2mprescription-detail-component[22m [2m | [22m [36m11.12 kB[39m[2m | [22m                [36m3.41 kB[39m
+[32mchunk-EHOVU5ZN.js[39m  [2m | [22m[2mpharmacist-dashboard-component[22m[2m | [22m  [36m8.66 kB[39m[2m | [22m                [36m2.61 kB[39m
+[32mchunk-AAAZZUGF.js[39m  [2m | [22m[2mprescriptions-list-component[22m  [2m | [22m  [36m7.68 kB[39m[2m | [22m                [36m2.45 kB[39m
+[32mchunk-CPBDOYB7.js[39m  [2m | [22m[2mpharmacist-layout-component[22m   [2m | [22m  [36m7.50 kB[39m[2m | [22m                [36m2.29 kB[39m
+[32mchunk-P7BTYOWG.js[39m  [2m | [22m[2mhome-component[22m                [2m | [22m  [36m5.79 kB[39m[2m | [22m                [36m2.02 kB[39m
+[32mchunk-G4UZU4DP.js[39m  [2m | [22m[2m-[22m                             [2m | [22m  [36m5.53 kB[39m[2m | [22m                [36m1.35 kB[39m
+[32mchunk-HF32LR7A.js[39m  [2m | [22m[2m-[22m                             [2m | [22m  [36m1.64 kB[39m[2m | [22m              [36m617 bytes[39m
+[32mchunk-OQKBHHLE.js[39m  [2m | [22m[2m-[22m                             [2m | [22m  [36m1.56 kB[39m[2m | [22m              [36m526 bytes[39m
+[2m...and 3 more lazy chunks files. Use "--verbose" to show all the files.[22m
+
+Application bundle generation failed. [4.329 seconds] - 2026-03-09T17:05:13.403Z
+
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/pharmacist-dashboard/pharmacist-profile/pharmacist-profile.component.html:44:58:
+[37m      44 │ ...badge" [class]="p.status?.[32mtoLowerCase[37m()">{{ p.status || 'En att...
+         ╵                              [32m~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component PharmacistProfileComponent.
+
+    src/app/pages/pharmacist-dashboard/pharmacist-profile/pharmacist-profile.component.ts:10:15:
+[37m      10 │   templateUrl: [32m'./pharmacist-profile.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:css;a277f65928ec01755004552e178465510ad5b1c05c4e638fe0c112421af5fc00;C:/app pfe/medical-frontend/medical-frontend/src/app/pages/patient-dashboard/patient-dashboard.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 4.97 kB with a total of 8.97 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:css;78c410d10919a96c44bdb52eaa4decc00c36eabb624575488e050e44a990c532;C:/app pfe/medical-frontend/medical-frontend/src/app/pages/auth/auth.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 1.34 kB with a total of 5.34 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:css;d12cec8e3189e1c5958fcf64a346ffe22156c3c67358f127498f9146fbab057d;C:/app pfe/medical-frontend/medical-frontend/src/app/pages/doctor-dashboard/doctor-dashboard.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 8.85 kB with a total of 12.85 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:css;3244c5c17e8b72019eeb868415f0ebf9711600c0f883906440e80edbf8ec3143;C:/app pfe/medical-frontend/medical-frontend/src/app/pages/pharmacist-dashboard/stock-list/stock-list.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 376 bytes with a total of 4.38 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1msrc/app/pages/pharmacist-dashboard/pharmacist-profile/pharmacist-profile.component.css exceeded maximum budget. Budget 4.00 kB was not met by 1.05 kB with a total of 5.05 kB.[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mangular:styles/component:css;a277f65928ec01755004552e178465510ad5b1c05c4e638fe0c112421af5fc00;C:/app pfe/medical-frontend/medical-frontend/src/app/pages/patient-dashboard/patient-dashboard.component.ts exceeded maximum budget. Budget 8.00 kB was not met by 975 bytes with a total of 8.97 kB.[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mangular:styles/component:css;d12cec8e3189e1c5958fcf64a346ffe22156c3c67358f127498f9146fbab057d;C:/app pfe/medical-frontend/medical-frontend/src/app/pages/doctor-dashboard/doctor-dashboard.component.ts exceeded maximum budget. Budget 8.00 kB was not met by 4.85 kB with a total of 12.85 kB.[0m
+
+[39m[22m

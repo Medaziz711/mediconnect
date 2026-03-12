@@ -1,0 +1,862 @@
+﻿
+    <includes>${spring-boot.i
+ncludes}</includes>
+    <jvmArguments>${spring-bo
+ot.run.jvmArguments}</jvmArgu
+ments>
+>   <mainClass>com.medical.pl
+atform.MediconnectProApplicat
+ion</mainClass>
+    <noverify>${spring-boot.r
+un.noverify}</noverify>
+    <optimizedLaunch default-
+value="true">${spring-boot.ru
+n.optimizedLaunch}</optimized
+Launch>
+    <profiles>${spring-boot.r
+un.profiles}</profiles>
+    <project 
+default-value="${project}"/>
+    <session 
+default-value="${session}"/>
+    <skip default-value="fals
+e">${spring-boot.run.skip}</s
+kip>
+    <useTestClasspath default
+-value="false">${spring-boot.
+run.useTestClasspath}</useTes
+tClasspath>
+    <workingDirectory>${sprin
+g-boot.run.workingDirectory}<
+/workingDirectory>
+  </configuration>
+  [DEBUG] ===================
+=============================
+=======================
+  [INFO] 
+  [INFO] >>> 
+spring-boot:3.2.0:run 
+(default-cli) > test-compile 
+@ medical-pharmacy-platform 
+>>>
+  [DEBUG] Using mirror 
+maven-default-http-blocker 
+(http://0.0.0.0/) for 
+ow2-snapshot (http://reposito
+ry.ow2.org/nexus/content/repo
+sitories/snapshots).
+  [DEBUG] Using mirror 
+maven-default-http-blocker 
+(http://0.0.0.0/) for 
+vaadin-snapshots (http://oss.
+sonatype.org/content/reposito
+ries/vaadin-snapshots/).
+  [DEBUG] Using mirror 
+maven-default-http-blocker 
+(http://0.0.0.0/) for 
+vaadin-releases (http://oss.s
+onatype.org/content/repositor
+ies/vaadin-releases/).
+  [DEBUG] Using mirror 
+maven-default-http-blocker 
+(http://0.0.0.0/) for 
+apache.snapshots (http://repo
+sitory.apache.org/snapshots).
+  [DEBUG] Dependency 
+collection stats {ConflictMar
+ker.analyzeTime=1210700, Conf
+lictMarker.markTime=448100, C
+onflictMarker.nodeCount=311, 
+ConflictIdSorter.graphTime=15
+63000, ConflictIdSorter.topso
+rtTime=890300, ConflictIdSort
+er.conflictIdCount=130, Confl
+ictIdSorter.conflictIdCycleCo
+unt=0, ConflictResolver.total
+Time=12770400, ConflictResolv
+er.conflictItemCount=268, DfD
+ependencyCollector.collectTim
+e=724127200, DfDependencyColl
+ector.transformTime=19442000}
+  [DEBUG] com.medical:medical
+-pharmacy-platform:jar:1.0.0
+  [DEBUG]    org.springframew
+ork.boot:spring-boot-starter-
+web:jar:3.2.0:compile
+  [DEBUG]       org.springfra
+mework.boot:spring-boot-start
+er:jar:3.2.0:compile 
+(version managed from 3.2.0)
+  [DEBUG]          org.spring
+framework.boot:spring-boot-st
+arter-logging:jar:3.2.0:compi
+le (version managed from 
+3.2.0)
+  [DEBUG]             ch.qos.
+logback:logback-classic:jar:1
+.4.11:compile (version 
+managed from 1.4.11)
+  [DEBUG]                ch.q
+os.logback:logback-core:jar:1
+.4.11:compile (version 
+managed from 1.4.11)
+  [DEBUG]             org.apa
+che.logging.log4j:log4j-to-sl
+f4j:jar:2.21.1:compile 
+(version managed from 2.21.1)
+  [DEBUG]                org.
+apache.logging.log4j:log4j-ap
+i:jar:2.21.1:compile 
+(version managed from 2.21.1)
+  [DEBUG]             org.slf
+4j:jul-to-slf4j:jar:2.0.9:com
+pile (version managed from 
+2.0.9)
+  [DEBUG]          jakarta.an
+notation:jakarta.annotation-a
+pi:jar:2.1.1:compile 
+(version managed from 2.1.1)
+  [DEBUG]          org.yaml:s
+nakeyaml:jar:2.2:compile 
+(version managed from 2.2)
+  [DEBUG]       org.springfra
+mework.boot:spring-boot-start
+er-json:jar:3.2.0:compile 
+(version managed from 3.2.0)
+  [DEBUG]          com.faster
+xml.jackson.datatype:jackson-
+datatype-jdk8:jar:2.15.3:comp
+ile (version managed from 
+2.15.3)
+  [DEBUG]          com.faster
+xml.jackson.datatype:jackson-
+datatype-jsr310:jar:2.15.3:co
+mpile (version managed from 
+2.15.3)
+  [DEBUG]          com.faster
+xml.jackson.module:jackson-mo
+dule-parameter-names:jar:2.15
+.3:compile (version managed 
+from 2.15.3)
+  [DEBUG]       org.springfra
+mework.boot:spring-boot-start
+er-tomcat:jar:3.2.0:compile 
+(version managed from 3.2.0)
+  [DEBUG]          org.apache
+.tomcat.embed:tomcat-embed-co
+re:jar:10.1.16:compile 
+(version managed from 
+10.1.16)
+  [DEBUG]          org.apache
+.tomcat.embed:tomcat-embed-we
+bsocket:jar:10.1.16:compile 
+(version managed from 
+10.1.16)
+  [DEBUG]       org.springfra
+mework:spring-web:jar:6.1.1:c
+ompile (version managed from 
+6.1.1)
+  [DEBUG]          org.spring
+framework:spring-beans:jar:6.
+1.1:compile (version managed 
+from 6.1.1)
+  [DEBUG]          io.microme
+ter:micrometer-observation:ja
+r:1.12.0:compile (version 
+managed from 1.12.0)
+  [DEBUG]             io.micr
+ometer:micrometer-commons:jar
+:1.12.0:compile (version 
+managed from 1.12.0)
+  [DEBUG]       org.springfra
+mework:spring-webmvc:jar:6.1.
+1:compile (version managed 
+from 6.1.1)
+  [DEBUG]          org.spring
+framework:spring-context:jar:
+6.1.1:compile (version 
+managed from 6.1.1)
+  [DEBUG]          org.spring
+framework:spring-expression:j
+ar:6.1.1:compile (version 
+managed from 6.1.1)
+  [DEBUG]    org.springframew
+ork.boot:spring-boot-starter-
+data-jpa:jar:3.2.0:compile
+  [DEBUG]       org.springfra
+mework.boot:spring-boot-start
+er-aop:jar:3.2.0:compile 
+(version managed from 3.2.0)
+  [DEBUG]          org.aspect
+j:aspectjweaver:jar:1.9.20.1:
+compile (version managed 
+from 1.9.20.1)
+  [DEBUG]       org.springfra
+mework.boot:spring-boot-start
+er-jdbc:jar:3.2.0:compile 
+(version managed from 3.2.0)
+  [DEBUG]          com.zaxxer
+:HikariCP:jar:5.0.1:compile 
+(version managed from 5.0.1)
+  [DEBUG]          org.spring
+framework:spring-jdbc:jar:6.1
+.1:compile (version managed 
+from 6.1.1)
+  [DEBUG]       org.hibernate
+.orm:hibernate-core:jar:6.3.1
+.Final:compile (version 
+managed from 6.3.1.Final)
+  [DEBUG]          jakarta.pe
+rsistence:jakarta.persistence
+-api:jar:3.1.0:compile 
+(version managed from 3.1.0)
+  [DEBUG]          jakarta.tr
+ansaction:jakarta.transaction
+-api:jar:2.0.1:compile 
+(version managed from 2.0.1)
+  [DEBUG]          org.jboss.
+logging:jboss-logging:jar:3.5
+.3.Final:compile (version 
+managed from 3.5.0.Final)
+  [DEBUG]          org.hibern
+ate.common:hibernate-commons-
+annotations:jar:6.0.6.Final:r
+untime
+  [DEBUG]          io.smallry
+e:jandex:jar:3.1.2:runtime
+  [DEBUG]          com.faster
+xml:classmate:jar:1.6.0:compi
+le (version managed from 
+1.5.1)
+  [DEBUG]          net.bytebu
+ddy:byte-buddy:jar:1.14.10:ru
+ntime (version managed from 
+1.14.7)
+  [DEBUG]          org.glassf
+ish.jaxb:jaxb-runtime:jar:4.0
+.4:runtime (version managed 
+from 4.0.2)
+  [DEBUG]             org.gla
+ssfish.jaxb:jaxb-core:jar:4.0
+.4:runtime (version managed 
+from 4.0.4)
+  [DEBUG]                org.
+glassfish.jaxb:txw2:jar:4.0.4
+:runtime (version managed 
+from 4.0.4)
+  [DEBUG]                com.
+sun.istack:istack-commons-run
+time:jar:4.1.2:runtime 
+(version managed from 4.1.2)
+  [DEBUG]          jakarta.in
+ject:jakarta.inject-api:jar:2
+.0.1:runtime
+  [DEBUG]          org.antlr:
+antlr4-runtime:jar:4.10.1:com
+pile
+  [DEBUG]       org.springfra
+mework.data:spring-data-jpa:j
+ar:3.2.0:compile (version 
+managed from 3.2.0)
+  [DEBUG]          org.spring
+framework.data:spring-data-co
+mmons:jar:3.2.0:compile 
+(version managed from 3.2.0)
+  [DEBUG]          org.spring
+framework:spring-orm:jar:6.1.
+1:compile (version managed 
+from 6.1.0)
+  [DEBUG]          org.spring
+framework:spring-tx:jar:6.1.1
+:compile (version managed 
+from 6.1.0)
+  [DEBUG]          org.slf4j:
+slf4j-api:jar:2.0.9:compile 
+(version managed from 2.0.2)
+  [DEBUG]       org.springfra
+mework:spring-aspects:jar:6.1
+.1:compile (version managed 
+from 6.1.1)
+  [DEBUG]    org.springframew
+ork.boot:spring-boot-starter-
+security:jar:3.2.0:compile
+  [DEBUG]       org.springfra
+mework:spring-aop:jar:6.1.1:c
+ompile (version managed from 
+6.1.1)
+  [DEBUG]       org.springfra
+mework.security:spring-securi
+ty-config:jar:6.2.0:compile 
+(version managed from 6.2.0)
+  [DEBUG]       org.springfra
+mework.security:spring-securi
+ty-web:jar:6.2.0:compile 
+(version managed from 6.2.0)
+  [DEBUG]    org.springframew
+ork.boot:spring-boot-starter-
+validation:jar:3.2.0:compile
+  [DEBUG]       org.apache.to
+mcat.embed:tomcat-embed-el:ja
+r:10.1.16:compile (version 
+managed from 10.1.16)
+  [DEBUG]       org.hibernate
+.validator:hibernate-validato
+r:jar:8.0.1.Final:compile 
+(version managed from 
+8.0.1.Final)
+  [DEBUG]          jakarta.va
+lidation:jakarta.validation-a
+pi:jar:3.0.2:compile 
+(version managed from 3.0.2)
+  [DEBUG]    com.mysql:mysql-
+connector-j:jar:8.1.0:runtime
+ (exclusions managed from [co
+m.google.protobuf:protobuf-ja
+va:*:*])
+  [DEBUG]    org.projectlombo
+k:lombok:jar:1.18.30:compile 
+(optional)
+  [DEBUG]    org.springframew
+ork.boot:spring-boot-devtools
+:jar:3.2.0:runtime (optional)
+  [DEBUG]       org.springfra
+mework.boot:spring-boot:jar:3
+.2.0:compile (version 
+managed from 3.2.0)
+  [DEBUG]       org.springfra
+mework.boot:spring-boot-autoc
+onfigure:jar:3.2.0:compile 
+(version managed from 3.2.0)
+  [DEBUG]    org.springframew
+ork.boot:spring-boot-starter-
+test:jar:3.2.0:test
+  [DEBUG]       org.springfra
+mework.boot:spring-boot-test:
+jar:3.2.0:test (version 
+managed from 3.2.0)
+  [DEBUG]       org.springfra
+mework.boot:spring-boot-test-
+autoconfigure:jar:3.2.0:test 
+(version managed from 3.2.0)
+  [DEBUG]       com.jayway.js
+onpath:json-path:jar:2.8.0:te
+st (version managed from 
+2.8.0)
+  [DEBUG]       jakarta.xml.b
+ind:jakarta.xml.bind-api:jar:
+4.0.1:runtime (version 
+managed from 4.0.1)
+  [DEBUG]          jakarta.ac
+tivation:jakarta.activation-a
+pi:jar:2.1.2:compile 
+(version managed from 2.1.2)
+  [DEBUG]       net.minidev:j
+son-smart:jar:2.5.0:test 
+(version managed from 2.5.0)
+  [DEBUG]          net.minide
+v:accessors-smart:jar:2.5.0:t
+est
+  [DEBUG]             
+org.ow2.asm:asm:jar:9.3:test
+  [DEBUG]       org.assertj:a
+ssertj-core:jar:3.24.2:test 
+(version managed from 3.24.2)
+  [DEBUG]       org.awaitilit
+y:awaitility:jar:4.2.0:test 
+(version managed from 4.2.0)
+  [DEBUG]       org.hamcrest:
+hamcrest:jar:2.2:test 
+(version managed from 2.2)
+  [DEBUG]       org.junit.jup
+iter:junit-jupiter:jar:5.10.1
+:test (version managed from 
+5.10.1)
+  [DEBUG]          org.junit.
+jupiter:junit-jupiter-api:jar
+:5.10.1:test (version 
+managed from 5.10.1)
+  [DEBUG]             org.ope
+ntest4j:opentest4j:jar:1.3.0:
+test
+  [DEBUG]             org.jun
+it.platform:junit-platform-co
+mmons:jar:1.10.1:test 
+(version managed from 1.10.1)
+  [DEBUG]             org.api
+guardian:apiguardian-api:jar:
+1.1.2:test
+  [DEBUG]          org.junit.
+jupiter:junit-jupiter-params:
+jar:5.10.1:test (version 
+managed from 5.10.1)
+  [DEBUG]          org.junit.
+jupiter:junit-jupiter-engine:
+jar:5.10.1:test (version 
+managed from 5.10.1)
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\controller\Glob
+alExceptionHandler.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\controller\Auth
+Controller.java
+> [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\MediconnectProA
+pplication.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\dto\CreatePresc
+riptionDTO.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\dto\MedicalReco
+rdDTO.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\service\Appoint
+mentService.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\dto\AuthRespons
+eDTO.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\dto\PharmacyDTO
+.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\dto\Prescriptio
+nDTO.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\controller\User
+Controller.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\dto\PharmacistR
+egistrationRequest.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\service\Medical
+RecordService.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\dto\PharmacistU
+pdateDTO.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\dto\GoogleLogin
+RequestDTO.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\security\Custom
+UserDetails.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\dto\Prescriptio
+nLineDTO.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\controller\Appo
+intmentController.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\service\Prescri
+ptionService.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\repository\Ordo
+nnanceRepository.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\dto\PasswordRes
+etRequestDTO.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\controller\Pres
+criptionController.java
+  [DEBUG] Stale source 
+detected: C:\app pfe\medical\
+medical\src\main\java\com\med
+ical\platform\controller\Phar
+macistController.java
+  [INFO] Changes detected - 
+recompiling the module! 
+:source
+  [DEBUG] Classpath:
+  [DEBUG]  C:\app pfe\medical
+\medical\target\classes
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\boot\spring-boot-starter-we
+b\3.2.0\spring-boot-starter-w
+eb-3.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\boot\spring-boot-starter\3.
+2.0\spring-boot-starter-3.2.0
+.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\boot\spring-boot-starter-lo
+gging\3.2.0\spring-boot-start
+er-logging-3.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\ch\qos\logback\log
+back-classic\1.4.11\logback-c
+lassic-1.4.11.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\ch\qos\logback\log
+back-core\1.4.11\logback-core
+-1.4.11.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\apache\logging
+\log4j\log4j-to-slf4j\2.21.1\
+log4j-to-slf4j-2.21.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\apache\logging
+\log4j\log4j-api\2.21.1\log4j
+-api-2.21.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\slf4j\jul-to-s
+lf4j\2.0.9\jul-to-slf4j-2.0.9
+.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\jakarta\annotation
+\jakarta.annotation-api\2.1.1
+\jakarta.annotation-api-2.1.1
+.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\yaml\snakeyaml
+\2.2\snakeyaml-2.2.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\boot\spring-boot-starter-js
+on\3.2.0\spring-boot-starter-
+json-3.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\fasterxml\jack
+son\datatype\jackson-datatype
+-jdk8\2.15.3\jackson-datatype
+-jdk8-2.15.3.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\fasterxml\jack
+son\datatype\jackson-datatype
+-jsr310\2.15.3\jackson-dataty
+pe-jsr310-2.15.3.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\fasterxml\jack
+son\module\jackson-module-par
+ameter-names\2.15.3\jackson-m
+odule-parameter-names-2.15.3.
+jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\boot\spring-boot-starter-to
+mcat\3.2.0\spring-boot-starte
+r-tomcat-3.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\apache\tomcat\
+embed\tomcat-embed-core\10.1.
+16\tomcat-embed-core-10.1.16.
+jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\apache\tomcat\
+embed\tomcat-embed-websocket\
+10.1.16\tomcat-embed-websocke
+t-10.1.16.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\spring-web\6.1.1\spring-web
+-6.1.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\spring-beans\6.1.1\spring-b
+eans-6.1.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\io\micrometer\micr
+ometer-observation\1.12.0\mic
+rometer-observation-1.12.0.ja
+r
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\io\micrometer\micr
+ometer-commons\1.12.0\microme
+ter-commons-1.12.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\spring-webmvc\6.1.1\spring-
+webmvc-6.1.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\spring-context\6.1.1\spring
+-context-6.1.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\spring-expression\6.1.1\spr
+ing-expression-6.1.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\boot\spring-boot-starter-da
+ta-jpa\3.2.0\spring-boot-star
+ter-data-jpa-3.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\boot\spring-boot-starter-ao
+p\3.2.0\spring-boot-starter-a
+op-3.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\aspectj\aspect
+jweaver\1.9.20.1\aspectjweave
+r-1.9.20.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\boot\spring-boot-starter-jd
+bc\3.2.0\spring-boot-starter-
+jdbc-3.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\zaxxer\HikariC
+P\5.0.1\HikariCP-5.0.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\spring-jdbc\6.1.1\spring-jd
+bc-6.1.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\hibernate\orm\
+hibernate-core\6.3.1.Final\hi
+bernate-core-6.3.1.Final.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\jakarta\persistenc
+e\jakarta.persistence-api\3.1
+.0\jakarta.persistence-api-3.
+1.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\jakarta\transactio
+n\jakarta.transaction-api\2.0
+.1\jakarta.transaction-api-2.
+0.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\jboss\logging\
+jboss-logging\3.5.3.Final\jbo
+ss-logging-3.5.3.Final.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\fasterxml\clas
+smate\1.6.0\classmate-1.6.0.j
+ar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\antlr\antlr4-r
+untime\4.10.1\antlr4-runtime-
+4.10.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\data\spring-data-jpa\3.2.0\
+spring-data-jpa-3.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\data\spring-data-commons\3.
+2.0\spring-data-commons-3.2.0
+.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\spring-orm\6.1.1\spring-orm
+-6.1.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\spring-tx\6.1.1\spring-tx-6
+.1.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\slf4j\slf4j-ap
+i\2.0.9\slf4j-api-2.0.9.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\spring-aspects\6.1.1\spring
+-aspects-6.1.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\boot\spring-boot-starter-se
+curity\3.2.0\spring-boot-star
+ter-security-3.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\spring-aop\6.1.1\spring-aop
+-6.1.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\security\spring-security-co
+nfig\6.2.0\spring-security-co
+nfig-6.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\security\spring-security-we
+b\6.2.0\spring-security-web-6
+.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\boot\spring-boot-starter-va
+lidation\3.2.0\spring-boot-st
+arter-validation-3.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\apache\tomcat\
+embed\tomcat-embed-el\10.1.16
+\tomcat-embed-el-10.1.16.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\hibernate\vali
+dator\hibernate-validator\8.0
+.1.Final\hibernate-validator-
+8.0.1.Final.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\jakarta\validation
+\jakarta.validation-api\3.0.2
+\jakarta.validation-api-3.0.2
+.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\projectlombok\
+lombok\1.18.30\lombok-1.18.30
+.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\boot\spring-boot\3.2.0\spri
+ng-boot-3.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\boot\spring-boot-autoconfig
+ure\3.2.0\spring-boot-autocon
+figure-3.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\jakarta\activation
+\jakarta.activation-api\2.1.2
+\jakarta.activation-api-2.1.2
+.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\spring-core\6.1.1\spring-co
+re-6.1.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\spring-jcl\6.1.1\spring-jcl
+-6.1.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\security\spring-security-co
+re\6.2.0\spring-security-core
+-6.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\security\spring-security-cr
+ypto\6.2.0\spring-security-cr
+ypto-6.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\io\jsonwebtoken\jj
+wt-api\0.12.3\jjwt-api-0.12.3
+.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\fasterxml\jack
+son\core\jackson-databind\2.1
+5.3\jackson-databind-2.15.3.j
+ar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\fasterxml\jack
+son\core\jackson-annotations\
+2.15.3\jackson-annotations-2.
+15.3.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\fasterxml\jack
+son\core\jackson-core\2.15.3\
+jackson-core-2.15.3.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\boot\spring-boot-starter-ma
+il\3.2.0\spring-boot-starter-
+mail-3.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\springframewor
+k\spring-context-support\6.1.
+1\spring-context-support-6.1.
+1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\eclipse\angus\
+jakarta.mail\2.0.2\jakarta.ma
+il-2.0.2.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\google\api-cli
+ent\google-api-client\2.2.0\g
+oogle-api-client-2.2.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\commons-codec\comm
+ons-codec\1.16.0\commons-code
+c-1.16.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\google\oauth-c
+lient\google-oauth-client\1.3
+4.1\google-oauth-client-1.34.
+1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\google\http-cl
+ient\google-http-client-gson\
+1.42.3\google-http-client-gso
+n-1.42.3.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\google\code\gs
+on\gson\2.10.1\gson-2.10.1.ja
+r
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\google\guava\g
+uava\31.1-jre\guava-31.1-jre.
+jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\google\guava\f
+ailureaccess\1.0.1\failureacc
+ess-1.0.1.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\google\guava\l
+istenablefuture\9999.0-empty-
+to-avoid-conflict-with-guava\
+listenablefuture-9999.0-empty
+-to-avoid-conflict-with-guava
+.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\checkerframewo
+rk\checker-qual\3.12.0\checke
+r-qual-3.12.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\google\errorpr
+one\error_prone_annotations\2
+.11.0\error_prone_annotations
+-2.11.0.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\google\j2objc\
+j2objc-annotations\1.3\j2objc
+-annotations-1.3.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\com\google\http-cl
+ient\google-http-client-apach
+e-v2\1.42.3\google-http-clien
+t-apache-v2-1.42.3.jar
+  [DEBUG]  C:\Users\aziz\.m2\
+repository\org\apache\httpcom
+ponents\httpcore\4.4.16\httpc
+ore-4.4.16.jar
+
+
